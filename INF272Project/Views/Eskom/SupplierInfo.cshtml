@@ -1,0 +1,89 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+    <title>Supplier Information</title>
+</head>
+<body>
+    <div class="header"><img class="headimg" src="https://i.imgur.com/UHU2hB9.png" /></div>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #034f84;">
+        <a class="navbar-brand" href="#"><img src="https://i.imgur.com/W3wSxXQ.png" width="32" height="30" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="#">Storage</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Stations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Power Levels</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Suppliers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Maintenance Roster</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Add
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="@Url.Action("UserCRUD", "Eskom" )">User</a>
+                        <a class="dropdown-item" href="#">Station</a>
+                        <a class="dropdown-item" href="#">Supplier</a>
+                        <a class="dropdown-item" href="#">Silo</a>
+                        <a class="dropdown-item" href="#">Distribution Center</a>
+                        <a class="dropdown-item" href="#">Powerplant</a>
+                        <a class="dropdown-item" href="#">Generators</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-right">
+
+                <li class="nav-item"><a class="nav-link" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+
+    <div class="wrapper">
+        <h1>Supplier Information</h1>
+        <br />
+    </div>
+
+    <h1 class="maintenance-h1">Currently In-Progress</h1>
+    @*<div class="container supp-card-container">
+        <div class="supp-card-left">
+            <h5>Supplier Name</h5>
+            <p>loremdskafjlksdjflkasjdfjasdljflk;ajsdflk;jaslkdfjasjdflkjdsalkfjlaks;jdfljasdflkjsdjflasjdflkasjdflkjasdlf;jaslkd;jflajsdflk;jasdflkj;aslk;djfl;kjasfdlk;jafd</p>
+        </div>
+        <div class="supp-card-mid">
+            DESCRIPTION
+            <p>loremdskafjlksdjflkasjdfjasdljflk;ajsdflk;jaslkdfjasjdflkjdsalkfjlaks;jdfljasdflkjsdjflasjdflkasjdflkjasdlf;jaslkd;jflajsdflk;jasdflkj;aslk;djfl;kjasfdlk;jafd</p>
+        </div>
+        <div class="supp-card-right">
+            STATIONS SUPPLIED
+            <p>loremdskafjlksdjflkasjdfjasdljflk;ajsdflk;jaslkdfjasjdflkjdsalkfjlaks;jdfljasdflkjsdjflasjdflkasjdflkjasdlf;jaslkd;jflajsdflk;jasdflkj;aslk;djfl;kjasfdlk;jafd</p>
+        </div>
+    </div>*@
+</body>
+</html>

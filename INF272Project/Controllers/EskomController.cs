@@ -29,6 +29,24 @@ namespace INF272Project.Controllers
         {
             return View();
         }
+        
+        //Additons by - Steven
+        public ActionResult MaintenanceRoster()
+        {
+            return View();
+        }
+        public ActionResult SupplierInfo()
+        {
+            return View();
+        }
+        public ActionResult DistributionCenterCRUD()
+        {
+            return View();
+        }
+        public ActionResult PowerPlantCRUD()
+        {
+            return View();
+        }
 
     }
 }
