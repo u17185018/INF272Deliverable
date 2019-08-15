@@ -54,5 +54,9 @@ namespace INF272Project.Controllers
         {
             return View();
         }
+        public ActionResult GeneratorCRUD()
+        {
+            return View();
+        }
     }
 }

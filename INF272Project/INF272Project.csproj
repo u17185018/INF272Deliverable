@@ -115,6 +115,7 @@
     <Content Include="Views\Eskom\Generators.cshtml" />
     <Content Include="Views\Eskom\PowerUnits.cshtml" />
     <Content Include="Views\Eskom\StationCRUD.cshtml" />
+    <Content Include="Views\Eskom\GeneratorCRUD.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
