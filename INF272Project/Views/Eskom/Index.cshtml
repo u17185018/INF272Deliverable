@@ -28,6 +28,10 @@
                 <li class="nav-item"><a class="nav-link" href="#">Stations</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Power Levels</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Suppliers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Power Plants</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Generators</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Distribution Centers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Silos</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Maintenance Roster</a></li>
 
                 <li class="nav-item dropdown">
@@ -35,13 +39,13 @@
                         Add
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">User</a>
-                        <a class="dropdown-item" href="#">Station</a>
-                        <a class="dropdown-item" href="#">Supplier</a>
-                        <a class="dropdown-item" href="#">Silo</a>
-                        <a class="dropdown-item" href="#">Distribution Center</a>
-                        <a class="dropdown-item" href="#">Powerplant</a>
-                        <a class="dropdown-item" href="#">Generators</a>
+                        <a class="dropdown-item" href="@Url.Action("UserCRUD", "Eskom" )">User</a>
+                        <a class="dropdown-item" href="@Url.Action("StationCRUD", "Eskom" )">Station</a>
+                        <a class="dropdown-item" href="@Url.Action("SupplierCRUD", "Eskom" )">Supplier</a>
+                        <a class="dropdown-item" href="@Url.Action("SiloCRUD", "Eskom" )">Silo</a>
+                        <a class="dropdown-item" href="@Url.Action("DistributionCenterCRUD", "Eskom" )">Distribution Center</a>
+                        <a class="dropdown-item" href="@Url.Action("PowerPlantCRUD", "Eskom" )">Powerplant</a>
+                        <a class="dropdown-item" href="@Url.Action("GeneratorsCRUD", "Eskom" )">Generators</a>
                     </div>
                 </li>
             </ul>
@@ -51,8 +55,26 @@
             </ul>
         </div>
     </nav>
+    <form class="form-horizontal">
+        <div>
 
-    <div> 
-    </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="txname">Username:</label>
+                <input id="itemname" type="text" name="user" class="form-control" required />
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="txname">Password:</label>
+                <input id="itemname" type="text" name="pass" class="form-control" required />
+            </div>
+
+            <button type="submit" class="btn btn-dark btn-lg">
+                <i class="fa fa-check"></i> Sign Up
+            </button>
+
+            <button type="button" onclick="window.location.href='@Url.Action("HomePage", "Eskom")';" class="btn btn-dark btn-lg">
+                <i class="fa fa-remove"></i>Cancel
+            </button>
+        </div>
+        </form>
 </body>
 </html>
