@@ -1,9 +1,7 @@
 ﻿@{
     Layout = null;
 }
-
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta charset="utf-8">
@@ -14,11 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-
 
     <title>Maintenance Roster</title>
 </head>
@@ -29,19 +25,16 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-
                 <li class="nav-item"><a class="nav-link" href="#">Storage</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Stations</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Power Levels</a></li>
                 <li class="nav-item"><a class="nav-link" href="@Url.Action("SupplierInfo", "Eskom" )">Suppliers</a></li>
                 <li class="nav-item"><a class="nav-link" href="@Url.Action("MaintenanceRoster", "Eskom" )">Maintenance Roster</a></li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Add
@@ -58,20 +51,16 @@
                 </li>
             </ul>
             <ul class="navbar-nav mr-right">
-
                 <li class="nav-item"><a class="nav-link" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
     </nav>
     <br />
-
     <div class="wrapper">
         <h1>Maintenance Roster</h1>
         <br />
     </div>
-
     <h1 class="maintenance-h1">Currently In-Progress</h1>
-
     <div id="home" class="container">
         <div class="table-responsive">
             <table align="center">
@@ -101,48 +90,46 @@
                 </tr>
             </table>
         </div>
-        <br/>
+        <br />
         <h1 class="maintenance-h1">Scheduled for Maintenance</h1>
-
-            <table align="center">
-                <tr>
-                    <th>Station</th>
-                    <th>Reason</th>
-                    <th>Start Date</th>
-                    <th>Start Time</th>
-                    <th>Est. End Date</th>
-                    <th>Est. End Time</th>
-                    <th>Tech. On Duty</th>
-                </tr>
-                <tr>
-                    <td>GARIEP</td>
-                    <td>Routine Maintenance</td>
-                    <td>16-05-2019</td>
-                    <td>23:00</td>
-                    <td>17-05-2019</td>
-                    <td>23:00</td>
-                    <td>GB007</td>
-                </tr>
-                <tr>
-                    <td>DUVHA</td>
-                    <td>Routine Maintenance</td>
-                    <td>17-05-2019</td>
-                    <td>14:00</td>
-                    <td>17-05-2019</td>
-                    <td>23:00</td>
-                    <td>SJ345</td>
-                </tr>
-                <tr>
-                    <td>GOURIKA</td>
-                    <td>Routine Maintenance</td>
-                    <td>18-05-2019</td>
-                    <td>00:00</td>
-                    <td>18-05-2019</td>
-                    <td>03:00</td>
-                    <td>GB007</td>
-                </tr>
-            </table>
-
-        </div>
+        <table align="center">
+            <tr>
+                <th>Station</th>
+                <th>Reason</th>
+                <th>Start Date</th>
+                <th>Start Time</th>
+                <th>Est. End Date</th>
+                <th>Est. End Time</th>
+                <th>Tech. On Duty</th>
+            </tr>
+            <tr>
+                <td>GARIEP</td>
+                <td>Routine Maintenance</td>
+                <td>16-05-2019</td>
+                <td>23:00</td>
+                <td>17-05-2019</td>
+                <td>23:00</td>
+                <td>GB007</td>
+            </tr>
+            <tr>
+                <td>DUVHA</td>
+                <td>Routine Maintenance</td>
+                <td>17-05-2019</td>
+                <td>14:00</td>
+                <td>17-05-2019</td>
+                <td>23:00</td>
+                <td>SJ345</td>
+            </tr>
+            <tr>
+                <td>GOURIKA</td>
+                <td>Routine Maintenance</td>
+                <td>18-05-2019</td>
+                <td>00:00</td>
+                <td>18-05-2019</td>
+                <td>03:00</td>
+                <td>GB007</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

@@ -1,9 +1,7 @@
 ﻿@{
     Layout = null;
 }
-
 <!DOCTYPE html>
-
 <html>
 <head>
     <meta charset="utf-8">
@@ -14,11 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-
     <title>Add Distribution Center</title>
 </head>
 <body>
@@ -28,19 +24,16 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-
                 <li class="nav-item"><a class="nav-link" href="#">Storage</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Stations</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Power Levels</a></li>
                 <li class="nav-item"><a class="nav-link" href="@Url.Action("SupplierInfo", "Eskom" )">Suppliers</a></li>
                 <li class="nav-item"><a class="nav-link" href="@Url.Action("MaintenanceRoster", "Eskom" )">Maintenance Roster</a></li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Add
@@ -57,25 +50,19 @@
                 </li>
             </ul>
             <ul class="navbar-nav mr-right">
-
                 <li class="nav-item"><a class="nav-link" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
     </nav>
     <br />
     <div class="wrapper">
-
         <h1>Add Distribution Center</h1>
-
         <div class="container">
-
             <form class="form-horizontal">
-
                 <div class="form-group">
                     <label class="control-label col-sm-4" for="name">Station Name:</label>
                     <input type="text" class="form-control" id="station" placeholder="e.g. Drakensberg" required>
                 </div>
-
                 <div class="form-group">
                     <label class="control-label col-sm-4" for="txname">Available Coal:</label>
                     <input id="itemname" type="number" name="cap" class="form-control" placeholder="In tonnes" required />
@@ -85,13 +72,10 @@
                 <button type="submit" class="btn btn-default btn-lg">
                     <span class="glyphicon glyphicon-ok"></span> Add
                 </button>
-
                 <button type="button" onclick="window.location.href='@Url.Action("HomePage", "Eskom")';" class="btn btn-default btn-lg">
                     <span class="glyphicon glyphicon-remove"></span> Cancel
                 </button>
-
             </form>
-
         </div>
     </div>
 </body>

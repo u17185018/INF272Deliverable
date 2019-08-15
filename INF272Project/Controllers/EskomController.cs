@@ -9,6 +9,8 @@ namespace INF272Project.Controllers
     public class EskomController : Controller
     {
         // GET: Telkom
+
+            //Additions by - Gideon
         public ActionResult Index()
         {
             return View();
@@ -26,6 +28,25 @@ namespace INF272Project.Controllers
             return View();
         }
         public ActionResult SupplierCRUD()
+        {
+            return View();
+        }
+
+
+        //Additons by - Steven
+        public ActionResult MaintenanceRoster()
+        {
+            return View();
+        }
+        public ActionResult SupplierInfo()
+        {
+            return View();
+        }
+        public ActionResult DistributionCenterCRUD()
+        {
+            return View();
+        }
+        public ActionResult PowerPlantCRUD()
         {
             return View();
         }

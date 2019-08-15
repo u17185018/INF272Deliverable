@@ -109,6 +109,10 @@
     <Content Include="Views\Eskom\HomePage.cshtml" />
     <Content Include="Views\Eskom\SiloCRUD.cshtml" />
     <Content Include="Views\Eskom\SupplierCRUD.cshtml" />
+    <Content Include="Views\Eskom\MaintenanceRoster.cshtml" />
+    <Content Include="Views\Eskom\SupplierInfo.cshtml" />
+    <Content Include="Views\Eskom\DistributionCenterCRUD.cshtml" />
+    <Content Include="Views\Eskom\PowerPlantCRUD.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
