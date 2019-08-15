@@ -63,47 +63,27 @@
         </div>
     </nav>
     <br />
-
-    <div class="container">
-        <h1>Station Power Levels</h1>
-    </div>
+    <div class="wrapper">
+      <div class="container">
+            <h1>Power Units CRUD</h1>
+      </div>
     <br />
+        <div class="container">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="name">Unit Wattages</label>
+                    <input type="number" class="form-control" id="name" placeholder="3" required>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="name">Extra Description</label>
+                    <input type="text" class="form-control" id="name" placeholder="Likes the crash after 6 hours of production" required>
+                </div>
 
-    <div id="home" class="container">
-        <table align="center">
-            <tr>
-                <th>Station</th>
-                <th>Down Generators</th>
-                <th>Lost Power Units(MW)</th>
-                <th>Active Generators</th>
-                <th>Produced Power Units(MW)</th>
-                <th>Status</th>
-            </tr>
-            <tr>
-                <td>ACACIA</td>
-                <td>0</td>
-                <td>0</td>
-                <td>5</td>
-                <td>2000</td>
-                <td>No risk</td>
-            </tr>
-            <tr>
-                <td>ANKERLIG</td>
-                <td>0</td>
-                <td>0</td>
-                <td>3</td>
-                <td>1560</td>
-                <td>No risk</td>
-            </tr>
-            <tr>
-                <td>ARNOT</td>
-                <td>2</td>
-                <td>990</td>
-                <td>1</td>
-                <td>430</td>
-                <td>High risk</td>
-            </tr>
-        </table>
+                <button type="button" onclick="window.location.href='@Url.Action("HomePage", "Eskom")';" class="btn btn-dark btn-lg">
+                    <i class="fa fa-remove"></i>Cancel
+                </button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
