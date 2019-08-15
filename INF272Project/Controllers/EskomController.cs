@@ -50,6 +50,9 @@ namespace INF272Project.Controllers
         {
             return View();
         }
-
+        public ActionResult StationCRUD()
+        {
+            return View();
+        }
     }
 }
