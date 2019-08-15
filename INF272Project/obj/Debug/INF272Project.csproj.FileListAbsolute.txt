@@ -31,3 +31,36 @@ c:\users\user\documents\visual studio 2015\Projects\INF272Project\INF272Project\
 c:\users\user\documents\visual studio 2015\Projects\INF272Project\INF272Project\obj\Debug\INF272Project.csprojResolveAssemblyReference.cache
 c:\users\user\documents\visual studio 2015\Projects\INF272Project\INF272Project\obj\Debug\INF272Project.dll
 c:\users\user\documents\visual studio 2015\Projects\INF272Project\INF272Project\obj\Debug\INF272Project.pdb
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\roslyn\csc.exe
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\roslyn\vbc.exe
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\roslyn\VBCSCompiler.exe
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\INF272Project.dll.config
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\INF272Project.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\INF272Project.pdb
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\System.Web.Helpers.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\System.Web.Mvc.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\System.Web.Razor.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\System.Web.Webpages.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\System.Web.Webpages.Razor.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\System.Web.Razor.xml
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\System.Web.Webpages.xml
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\System.Web.Webpages.Razor.xml
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\System.Web.Helpers.xml
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\bin\System.Web.Mvc.xml
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\obj\Debug\INF272Project.csprojResolveAssemblyReference.cache
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\obj\Debug\INF272Project.dll
+C:\Users\Corpi\Desktop\INF272Deliverable-master\INF272Project\obj\Debug\INF272Project.pdb

@@ -18,7 +18,8 @@
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <title>Add Silo</title>
+
+    <title>Add Distribution Center</title>
 </head>
 <body>
     <div class="header"><img class="headimg" src="https://i.imgur.com/UHU2hB9.png" /></div>
@@ -37,20 +38,20 @@
                 <li class="nav-item"><a class="nav-link" href="#">Storage</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Stations</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Power Levels</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Suppliers</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Maintenance Roster</a></li>
+                <li class="nav-item"><a class="nav-link" href="@Url.Action("SupplierInfo", "Eskom" )">Suppliers</a></li>
+                <li class="nav-item"><a class="nav-link" href="@Url.Action("MaintenanceRoster", "Eskom" )">Maintenance Roster</a></li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Add
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">User</a>
+                        <a class="dropdown-item" href="@Url.Action("UserCRUD", "Eskom" )">User</a>
                         <a class="dropdown-item" href="#">Station</a>
                         <a class="dropdown-item" href="#">Supplier</a>
                         <a class="dropdown-item" href="#">Silo</a>
-                        <a class="dropdown-item" href="#">Distribution Center</a>
-                        <a class="dropdown-item" href="#">Powerplant</a>
+                        <a class="dropdown-item" href="@Url.Action("DistributionCenterCRUD", "Eskom" )">Distribution Center</a>
+                        <a class="dropdown-item" href="@Url.Action("PowerPlantCRUD", "Eskom" )">Powerplant</a>
                         <a class="dropdown-item" href="#">Generators</a>
                     </div>
                 </li>
@@ -64,35 +65,21 @@
     <br />
     <div class="wrapper">
 
-        <h1>Add Silo</h1>
+        <h1>Add Distribution Center</h1>
 
         <div class="container">
 
             <form class="form-horizontal">
 
                 <div class="form-group">
-                    <label class="control-label col-sm-4" for="name">Silo Name:</label>
-                    <input type="text" class="form-control" id="silo" placeholder="e.g. Silo 1" required>
+                    <label class="control-label col-sm-4" for="name">Station Name:</label>
+                    <input type="text" class="form-control" id="station" placeholder="e.g. Drakensberg" required>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-sm-4" for="txname">Capacity (Size):</label>
+                    <label class="control-label col-sm-4" for="txname">Available Coal:</label>
                     <input id="itemname" type="number" name="cap" class="form-control" placeholder="In tonnes" required />
                 </div>
-
-
-                <div class="form-group">
-                    <label class="control-label col-sm-4" for="gen">Location:</label>
-                    <select class="form-control" id="gen" name="loc">
-                        <option>Acacia</option>
-                        <option>Gariep</option>
-                        <option>Kriel</option>
-                    </select>
-                </div>
-
-
-
-
                 <br />
                 <br />
                 <button type="submit" class="btn btn-default btn-lg">

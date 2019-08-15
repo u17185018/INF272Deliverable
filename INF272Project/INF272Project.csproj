@@ -109,6 +109,11 @@
     <Content Include="Views\Eskom\HomePage.cshtml" />
     <Content Include="Views\Eskom\SiloCRUD.cshtml" />
     <Content Include="Views\Eskom\SupplierCRUD.cshtml" />
+    <Content Include="Views\Eskom\StorageCapacity.cshtml" />
+    <Content Include="Views\Eskom\StationInfo.cshtml" />
+    <Content Include="Views\Eskom\PowerLevels.cshtml" />
+    <Content Include="Views\Eskom\Generators.cshtml" />
+    <Content Include="Views\Eskom\PowerUnits.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

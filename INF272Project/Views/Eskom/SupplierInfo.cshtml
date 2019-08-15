@@ -1,0 +1,138 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+    <title>Supplier Information</title>
+</head>
+<body>
+    <div class="header"><img class="headimg" src="https://i.imgur.com/UHU2hB9.png" /></div>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #034f84;">
+        <a class="navbar-brand" href="#"><img src="https://i.imgur.com/W3wSxXQ.png" width="32" height="30" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="#">Storage</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Stations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Power Levels</a></li>
+                <li class="nav-item"><a class="nav-link" href="@Url.Action("SupplierInfo", "Eskom" )">Suppliers</a></li>
+                <li class="nav-item"><a class="nav-link" href="@Url.Action("MaintenanceRoster", "Eskom" )">Maintenance Roster</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Add
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="@Url.Action("UserCRUD", "Eskom" )">User</a>
+                        <a class="dropdown-item" href="#">Station</a>
+                        <a class="dropdown-item" href="#">Supplier</a>
+                        <a class="dropdown-item" href="#">Silo</a>
+                        <a class="dropdown-item" href="@Url.Action("DistributionCenterCRUD", "Eskom" )">Distribution Center</a>
+                        <a class="dropdown-item" href="@Url.Action("PowerPlantCRUD", "Eskom" )">Powerplant</a>
+                        <a class="dropdown-item" href="#">Generators</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-right">
+
+                <li class="nav-item"><a class="nav-link" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br />
+
+    <div class="wrapper">
+        <h1>Supplier Information</h1>
+        <br />
+    </div>
+
+    <div class="container">
+        <div class="card-group">
+            <div class="card bg-light border-primary">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Generic Coal</h5>
+                </div>
+            </div>
+            <div class="card bg-light border-primary">
+                <div class="card-body text-left">
+                    <p class="card-text">Description</p>
+                    <p class="card-text">Our company sells high quality coal to the highest bidder and the rest to Eskom</p>
+                </div>
+            </div>
+            <div class="card bg-light border-primary">
+                <div class="card-body text-left">
+                    <p class="card-text">Stations Supplied</p>
+                    <p class="card-text">ACACIA <br /> DRAKENSBERG</p>
+                    <p class="card-text">Contact Details: <br/> Tel no: 012 999 883 <br/> Email: genCoal@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="card bg-light border-primary">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mr Coal Delivery</h5>
+                </div>
+            </div>
+            <div class="card bg-light border-primary">
+                <div class="card-body text-left">
+                    <p class="card-text">Description</p>
+                    <p class="card-text">Get the highest quality service delivered right to your door step</p>
+                </div>
+            </div>
+            <div class="card bg-light border-primary">
+                <div class="card-body text-left">
+                    <p class="card-text">Stations Supplied</p>
+                    <p class="card-text">ANKERLIG <br /> ARNOT <br /> CAMDEN</p>
+                    <p class="card-text">Contact Details: <br /> Tel no: 012 965 869 <br /> Email: mrCDel@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="card bg-light border-primary">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Kentucky Fried Coal</h5>
+                </div>
+            </div>
+            <div class="card bg-light border-primary">
+                <div class="card-body text-left">
+                    <p class="card-text">Description</p>
+                    <p class="card-text">Over 75 years of premium coal in a bucket</p>
+                </div>
+            </div>
+            <div class="card bg-light border-primary">
+                <div class="card-body text-left">
+                    <p class="card-text">Stations Supplied</p>
+                    <p class="card-text">CAMDEN <br /> DUVHA <br /> GARIEP</p>
+                    <p class="card-text">Contact Details: <br /> Tel no: 012 937 532 <br /> Email: KFC2@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

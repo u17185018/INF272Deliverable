@@ -29,6 +29,27 @@ namespace INF272Project.Controllers
         {
             return View();
         }
+        public ActionResult StorageCapacity()
+        {
+            return View();
+        }
+        public ActionResult StationInfo()
+        {
+            return View();
+        }
+
+        public ActionResult PowerLevels()
+        {
+            return View();
+        }
+        public ActionResult Generators()
+        {
+            return View();
+        }
+        public ActionResult PowerUnits()
+        {
+            return View();
+        }
 
     }
 }

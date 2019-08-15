@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     Layout = null;
 }
 
@@ -14,38 +15,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    <title>Add Silo</title>
+
+
+    <meta name="viewport" content="width=device-width" />
+    <title>PowerUnits</title>
 </head>
 <body>
+
     <div class="header"><img class="headimg" src="https://i.imgur.com/UHU2hB9.png" /></div>
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #034f84;">
         <a class="navbar-brand" href="#"><img src="https://i.imgur.com/W3wSxXQ.png" width="32" height="30" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-
                 <li class="nav-item"><a class="nav-link" href="#">Storage</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Stations</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Power Levels</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Suppliers</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Maintenance Roster</a></li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Add
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">User</a>
+                        <a class="dropdown-item" href="@Url.Action("UserCRUD", "Eskom" )">User</a>
                         <a class="dropdown-item" href="#">Station</a>
                         <a class="dropdown-item" href="#">Supplier</a>
                         <a class="dropdown-item" href="#">Silo</a>
@@ -62,50 +63,47 @@
         </div>
     </nav>
     <br />
-    <div class="wrapper">
 
-        <h1>Add Silo</h1>
+    <div class="container">
+        <h1>Station Power Levels</h1>
+    </div>
+    <br />
 
-        <div class="container">
-
-            <form class="form-horizontal">
-
-                <div class="form-group">
-                    <label class="control-label col-sm-4" for="name">Silo Name:</label>
-                    <input type="text" class="form-control" id="silo" placeholder="e.g. Silo 1" required>
-                </div>
-
-                <div class="form-group">
-                    <label class="control-label col-sm-4" for="txname">Capacity (Size):</label>
-                    <input id="itemname" type="number" name="cap" class="form-control" placeholder="In tonnes" required />
-                </div>
-
-
-                <div class="form-group">
-                    <label class="control-label col-sm-4" for="gen">Location:</label>
-                    <select class="form-control" id="gen" name="loc">
-                        <option>Acacia</option>
-                        <option>Gariep</option>
-                        <option>Kriel</option>
-                    </select>
-                </div>
-
-
-
-
-                <br />
-                <br />
-                <button type="submit" class="btn btn-default btn-lg">
-                    <span class="glyphicon glyphicon-ok"></span> Add
-                </button>
-
-                <button type="button" onclick="window.location.href='@Url.Action("HomePage", "Eskom")';" class="btn btn-default btn-lg">
-                    <span class="glyphicon glyphicon-remove"></span> Cancel
-                </button>
-
-            </form>
-
-        </div>
+    <div id="home" class="container">
+        <table align="center">
+            <tr>
+                <th>Station</th>
+                <th>Down Generators</th>
+                <th>Lost Power Units(MW)</th>
+                <th>Active Generators</th>
+                <th>Produced Power Units(MW)</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>ACACIA</td>
+                <td>0</td>
+                <td>0</td>
+                <td>5</td>
+                <td>2000</td>
+                <td>No risk</td>
+            </tr>
+            <tr>
+                <td>ANKERLIG</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>1560</td>
+                <td>No risk</td>
+            </tr>
+            <tr>
+                <td>ARNOT</td>
+                <td>2</td>
+                <td>990</td>
+                <td>1</td>
+                <td>430</td>
+                <td>High risk</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
