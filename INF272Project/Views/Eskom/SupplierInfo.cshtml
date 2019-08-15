@@ -18,13 +18,13 @@
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-    
-    
-    <title>Home</title>
+
+
+    <title>Supplier Information</title>
 </head>
 <body>
-   <div class="header"><img class="headimg" src="https://i.imgur.com/UHU2hB9.png" /></div> 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #034f84;" >
+    <div class="header"><img class="headimg" src="https://i.imgur.com/UHU2hB9.png" /></div>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #034f84;">
         <a class="navbar-brand" href="#"><img src="https://i.imgur.com/W3wSxXQ.png" width="32" height="30" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,8 +39,8 @@
                 <li class="nav-item"><a class="nav-link" href="#">Storage</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Stations</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Power Levels</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Suppliers</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Maintenance Roster</a></li>
+                <li class="nav-item"><a class="nav-link" href="@Url.Action("SupplierInfo", "Eskom" )">Suppliers</a></li>
+                <li class="nav-item"><a class="nav-link" href="@Url.Action("MaintenanceRoster", "Eskom" )">Maintenance Roster</a></li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,7 +58,7 @@
                 </li>
             </ul>
             <ul class="navbar-nav mr-right">
-              
+
                 <li class="nav-item"><a class="nav-link" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
@@ -66,83 +66,72 @@
     <br />
 
     <div class="wrapper">
-        <h1>Home</h1>
-        
+        <h1>Supplier Information</h1>
         <br />
-        <div class="card-deck mx-auto " style="width:80%;">
+    </div>
 
-            <div class="card  bg-light">
+    <div class="container">
+        <div class="card-group">
+            <div class="card bg-light border-primary">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Total Storage</h5>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 75%; background-color:#034f84;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <br />
-                    <p class="card-text">75% full</p>
+                    <h5 class="card-title">Generic Coal</h5>
                 </div>
             </div>
-
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Total Power Supply</h5>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 50%; background-color:#034f84;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <br />
-                    <p class="card-text">50% Power supplied</p>
+            <div class="card bg-light border-primary">
+                <div class="card-body text-left">
+                    <p class="card-text">Description</p>
+                    <p class="card-text">Our company sells high quality coal to the highest bidder and the rest to Eskom</p>
                 </div>
             </div>
-
-            <div class="card bg-light">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Active Power Stations</h5>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 63%; background-color:#034f84;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <br />
-                    <p class="card-text">63% active</p> 
-                </div> 
+            <div class="card bg-light border-primary">
+                <div class="card-body text-left">
+                    <p class="card-text">Stations Supplied</p>
+                    <p class="card-text">ACACIA <br /> DRAKENSBERG</p>
+                    <p class="card-text">Contact Details: <br/> Tel no: 012 999 883 <br/> Email: genCoal@gmail.com</p>
+                </div>
             </div>
-
         </div>
 
-        <br />
+        <div class="card-group">
+            <div class="card bg-light border-primary">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mr Coal Delivery</h5>
+                </div>
+            </div>
+            <div class="card bg-light border-primary">
+                <div class="card-body text-left">
+                    <p class="card-text">Description</p>
+                    <p class="card-text">Get the highest quality service delivered right to your door step</p>
+                </div>
+            </div>
+            <div class="card bg-light border-primary">
+                <div class="card-body text-left">
+                    <p class="card-text">Stations Supplied</p>
+                    <p class="card-text">ANKERLIG <br /> ARNOT <br /> CAMDEN</p>
+                    <p class="card-text">Contact Details: <br /> Tel no: 012 965 869 <br /> Email: mrCDel@gmail.com</p>
+                </div>
+            </div>
+        </div>
 
-   
-        
-        <div id="home" class="container">
-            <table align="center">
-               
-                <tr>
-                    <th>Area</th>
-                    <th>Reason</th>
-                    <th>Stage</th>
-                    <th>Date</th>                    
-                </tr>
-                <tr>
-                    <td>Acacia</td>
-                    <td>Maintenance</td>
-                    <td>3</td>
-                    <td>2019/09/10</td>
-                </tr>
-
-                <tr>
-                    <td>Ankerlig</td>
-                    <td>Fuel Shortage</td>
-                    <td>4</td>
-                    <td>2019/09/15</td>
-                </tr>
-
-                <tr>
-                    <td>Arnot</td>
-                    <td>Generator down</td>
-                    <td>4</td>
-                    <td>2019/09/4</td>
-                </tr>
-
-            </table>
-           
-
+        <div class="card-group">
+            <div class="card bg-light border-primary">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Kentucky Fried Coal</h5>
+                </div>
+            </div>
+            <div class="card bg-light border-primary">
+                <div class="card-body text-left">
+                    <p class="card-text">Description</p>
+                    <p class="card-text">Over 75 years of premium coal in a bucket</p>
+                </div>
+            </div>
+            <div class="card bg-light border-primary">
+                <div class="card-body text-left">
+                    <p class="card-text">Stations Supplied</p>
+                    <p class="card-text">CAMDEN <br /> DUVHA <br /> GARIEP</p>
+                    <p class="card-text">Contact Details: <br /> Tel no: 012 937 532 <br /> Email: KFC2@gmail.com</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
